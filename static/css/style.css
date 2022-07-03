@@ -1,0 +1,123 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+ #body {
+  font-family: 'Bebas Neue', cursive;
+
+}
+
+#head-text  {
+  color: black; !important;
+}
+
+#middle-text {
+  color: black;
+}
+
+nav ul a,
+nav .brand-logo, .material-icons {
+  color: #444;
+}
+
+.brand-logo {
+  text-decoration: underline;
+}
+
+#modal1 {
+  height: 80px;
+  width: 400px;
+}
+
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: 500px !important;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+#search {
+  display: flex;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 0 !important;
+}
+
+#search-form {
+  width:300px;
+  color:black;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}
+
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+
+#form1{
+  margin-left:200px;
+}
+.side-nav li a {
+  text-decoration:none;
+}
+#searchResults2{
+  background-color:#666666;
+}
+#searchResults{
+  background-color:#666666;
+}
+.right li a{
+  padding-right:2em;
+  text-decoration:none
+}
+
+
