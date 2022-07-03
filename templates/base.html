@@ -85,8 +85,8 @@
                 </ul>
                 <ul id="nav-mobile" class="sidenav">
                     <li>
-                        <a class='dropdown-trigger' href='#' data-target='dropdown1'>My Account</a>
-                        <ul id='dropdown1' class='dropdown-content'>
+                        <a class='dropdown-trigger2' href='#' data-target='dropdown2'>My Account</a>
+                        <ul id='dropdown2' class='dropdown-content'>
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="" class="dropdown-item">Product Management</a>
@@ -153,9 +153,9 @@
         $('.modal').modal();
     });
 
-    $('.dropdown-trigger').dropdown();
-
     $('.dropdown-trigger1').dropdown();
+
+    $('.dropdown-trigger2').dropdown();
 </script>
 
 </html>
