@@ -1,40 +1,86 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
 
-  <title>The Coffee Co {% block extra_title %}{% endblock %}</title>
+    <title>The Coffee Co {% block extra_title %}{% endblock %}</title>
 
-  {% block corecss %}
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-  {% endblock %}
+    {% block corecss %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    {% endblock %}
 
-  {% block extra_css %}
-  {% endblock %}
+    {% block extra_css %}
+    {% endblock %}
 
 
-  {% block corejs %}
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="{% static 'js/materialize.js' %}"></script>
-        <script src="{% static 'js/init.js' %}"></script>
-  {% endblock %}
+    {% block corejs %}
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{% static 'js/materialize.js' %}"></script>
+    <script src="{% static 'js/init.js' %}"></script>
+    {% endblock %}
 
-  {% block extra_js %}
-  {% endblock %}
+    {% block extra_js %}
+    {% endblock %}
 
 </head>
-<body>
-    <header></header>
+
+<body id="body">
+    <header>
+        <!-- Nar Bar -->
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="{}" class="brand-logo">The Coffee Co</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Register</a></li>
+                    <li><a href="#">All Prodcuts</a></li>
+                    <li><a href="#">Fresh Coffee</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li>
+                        <!-- Modal Trigger -->
+                        <a class="modal-trigger" href="#modal1"><i class="material-icons">search</i></a>
+                        <!-- Modal Structure -->
+                        <div id="modal1" class="modal">
+                            <nav>
+                                <div class="nav-wrapper">
+                                    <form>
+                                        <div class="input-field">
+                                            <input id="search" type="search" required placeholder="Search Our Products">
+                                            <label class="label-icon" for="search"><i
+                                                    class="material-icons">search</i></label>
+                                            <i class="material-icons">close</i>
+                                        </div>
+                                    </form>
+                                </div>
+                            </nav>
+                    </li>
+                    <li> <i class="material-icons">add_shopping_cart</i></li>
+                    <li><a href="">£0.00</a></li>
+                </ul>
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Register</a></li>
+                    <li><a href="#">All Prodcuts</a></li>
+                    <li><a href="#">Fresh Coffee</a></li>
+                    <li><a href="#">Coffee Machines</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="">£0.00</a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </header>
 
     {% if messages %}
     <div></div>
@@ -49,5 +95,31 @@
     {% block postloadjs %}
     {% endblock %}
 
-  </body>
+    <!-- Footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Company Address</h5>
+                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like
+                        it's our full time job. Any amount would help support and continue development on this project
+                        and is greatly appreciated.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-3">
+            <div class="container">
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('.modal').modal();
+    });
+</script>
+
 </html>

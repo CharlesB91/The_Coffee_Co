@@ -30,12 +30,6 @@ nav .brand-logo, .material-icons {
   text-decoration: underline;
 }
 
-#modal1 {
-  height: 80px;
-  width: 400px;
-}
-
-
 p {
   line-height: 2rem;
 }
@@ -53,18 +47,6 @@ p {
   .parallax-container .section {
     width: 100%;
   }
-
-#search {
-  display: flex;
-  justify-content: center !important;
-  text-align: center !important;
-  padding: 0 !important;
-}
-
-#search-form {
-  width:300px;
-  color:black;
-}
 
 ::-webkit-input-placeholder {
   text-align: center;
@@ -118,6 +100,14 @@ footer.page-footer {
 .right li a{
   padding-right:2em;
   text-decoration:none
+}
+
+.nav-wrapper {
+  background-color: white;
+}
+
+.search-header {
+  text-align: center;
 }
 
 
