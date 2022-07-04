@@ -27,7 +27,7 @@
 
 nav ul a,
 nav .brand-logo, .material-icons {
-  color: #444;
+  color: #444 !important;
 }
 
 .brand-logo {
