@@ -1,129 +1,127 @@
 
-    Custom Stylesheet
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
- @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    html {
+        height: 100%;
+    }
 
- html {
-  height: 100%;
- }
+    #body {
+        font-family: 'Bebas Neue', cursive;
 
- #body {
-  font-family: 'Bebas Neue', cursive;
+    }
 
-}
+    #head-text {
+        color: black;
+         !important;
+    }
 
-#head-text  {
-  color: black; !important;
-}
+    #middle-text {
+        color: black;
+    }
 
-#middle-text {
-  color: black;
-}
+    nav ul a,
+    nav .brand-logo,
+    .material-icons {
+        color: #444 !important;
+    }
 
-nav ul a,
-nav .brand-logo, .material-icons {
-  color: #444 !important;
-}
+    .brand-logo {
+        text-decoration: underline;
+    }
 
-.brand-logo {
-  text-decoration: underline;
-}
+    p {
+        line-height: 2rem;
+    }
 
-p {
-  line-height: 2rem;
-}
+    .sidenav-trigger {
+        color: #26a69a;
+    }
 
-.sidenav-trigger {
-  color: #26a69a;
-}
+    .parallax-container {
+        min-height: 380px;
+        line-height: 0;
+        height: 500px !important;
+        color: rgba(255, 255, 255, .9);
+    }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: 500px !important;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
+    .parallax-container .section {
+        width: 100%;
+    }
 
-::-webkit-input-placeholder {
-  text-align: center;
-}
+    ::-webkit-input-placeholder {
+        text-align: center;
+    }
 
-:-moz-placeholder {
-  text-align: center;
-}
+    :-moz-placeholder {
+        text-align: center;
+    }
 
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
+    @media only screen and (max-width : 992px) {
+        .parallax-container .section {
+            position: absolute;
+            top: 40%;
+        }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
+        #index-banner .section {
+            top: 10%;
+        }
+    }
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
+    @media only screen and (max-width : 600px) {
+        #index-banner .section {
+            top: 0;
+        }
+    }
 
-footer.page-footer {
-  margin: 0;
-}
+    .icon-block {
+        padding: 0 15px;
+    }
+
+    .icon-block .material-icons {
+        font-size: inherit;
+    }
+
+    footer.page-footer {
+        margin: 0;
+    }
 
 
-#form1{
-  margin-left:200px;
-}
-.side-nav li a {
-  text-decoration:none;
-}
-#searchResults2{
-  background-color:#666666;
-}
-#searchResults{
-  background-color:#666666;
-}
-.right li a{
-  padding-right:2em;
-  text-decoration:none
-}
+    #form1 {
+        margin-left: 200px;
+    }
 
-.nav-wrapper {
-  background-color: white;
-}
+    .side-nav li a {
+        text-decoration: none;
+    }
 
-.search-header {
-  text-align: center;
-}
+    #searchResults2 {
+        background-color: #666666;
+    }
 
-#product-view {
-  height: 100%;
-  width: 100%;
-}
+    #searchResults {
+        background-color: #666666;
+    }
 
-#product-veiw img {
-height: 350px;
-}
+    .right li a {
+        padding-right: 2em;
+        text-decoration: none
+    }
 
-#card-area {
-    padding: 20px;
-}
+    .nav-wrapper {
+        background-color: white;
+    }
+
+    .search-header {
+        text-align: center;
+    }
+
+    #product-view {
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .card img {
+        height: 480px !important;
+    }

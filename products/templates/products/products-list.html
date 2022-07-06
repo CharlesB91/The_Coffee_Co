@@ -3,28 +3,29 @@
 
 {% block content %}
 
-</style>
-<div id="product-veiw" class="row">
-    {% for product in products %}
-    <div id="card-area" class="col s12 m6 l3">
-                <div class="card">
-                    <div class="card-image">
-                        {% if product.image %}
-                        <a href="">
-                            <img src="{{ product.image.url }}" alt="{{ product.name }}">
-                        </a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                        </a>
-                        {% endif %}
-                    </div>
-                    <div class="card-content">
-                        <p>{{ product.name }}</p>
-                        <p>{{ product.price }}</p>
-                    </div>
+<div id="product-view">
+    <div class="row">
+        {% for product in products %}
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    {% if product.image %}
+                    <a href="">
+                        <img class="responsive-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    {% else %}
+                    <a href="">
+                        <img class="responsive-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    </a>
+                    {% endif %}
                 </div>
+                <div class="card-content">
+                    <p>{{ product.name }}</p>
+                    <p>{{ product.price }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
 {% endblock %}
