@@ -1,4 +1,5 @@
-/* Custom Stylesheet */
+
+    Custom Stylesheet
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
@@ -114,4 +115,15 @@ footer.page-footer {
   text-align: center;
 }
 
+#product-view {
+  height: 100%;
+  width: 100%;
+}
 
+#product-veiw img {
+height: 350px;
+}
+
+#card-area {
+    padding: 20px;
+}
