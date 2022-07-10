@@ -10,11 +10,11 @@
             <div class="card">
                 <div class="card-image">
                     {% if product.image %}
-                    <a href="">
-                        <img class="responsive-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <a href="{% url 'product-detail' product.id %}">
+                        <img  class="responsive-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                     </a>
                     {% else %}
-                    <a href="">
+                    <a href="{% url 'product-detail' product.id %}">
                         <img class="responsive-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     </a>
                     {% endif %}
