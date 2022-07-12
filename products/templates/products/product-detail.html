@@ -21,8 +21,7 @@
     <p>{{ product.description }}</p>
     {% if product.category %}
     <p>
-      <a href="{% url 'products' %}?category={{ product.category.name }}">
-        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+      <a href="{% url 'products' %}?category={{ product.category.name }}">{{ product.category.friendly_name }}
       </a>
     </p>
     {% endif %}

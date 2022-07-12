@@ -61,8 +61,10 @@
                     <li>
                         <a class='dropdown-trigger2' href='#' data-target='dropdown2'>Products</a>
                         <ul id='dropdown2' class='dropdown-content'>
-                            <li><a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a></li>
-                            <li><a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a></li>
+                            <li><a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By
+                                    Price</a></li>
+                            <li><a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By
+                                    Category</a></li>
                             <li><a href="{% url 'products' %}" class="dropdown-item">All Products</a></li>
 
                         </ul>
@@ -112,8 +114,10 @@
                     <li>
                         <a class='dropdown-trigger4' href='#' data-target='dropdown4'>Products</a>
                         <ul id='dropdown4' class='dropdown-content'>
-                            <li><a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a></li>
-                            <li><a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a></li>
+                            <li><a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By
+                                    Price</a></li>
+                            <li><a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By
+                                    Category</a></li>
                             <li><a href="{% url 'products' %}" class="dropdown-item">All Products</a></li>
                         </ul>
                     </li>
@@ -185,6 +189,9 @@
     $('.dropdown-trigger2').dropdown();
     $('.dropdown-trigger3').dropdown();
     $('.dropdown-trigger4').dropdown();
+    $(document).ready(function(){
+    $('select').formSelect();
+  });
 </script>
 
 </html>
