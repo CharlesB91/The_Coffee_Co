@@ -14,7 +14,7 @@
     </div>
     <div class="col s6">
         <div class="input-field col s12">
-            <select>
+            <select id="sort-selector">
                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)
                 </option>
