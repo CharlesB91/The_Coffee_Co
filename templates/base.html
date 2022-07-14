@@ -89,7 +89,7 @@
                             </nav>
                     </li>
                     <li> <i class="material-icons">local_grocery_store</i></li>
-                    <li><a href=""> {% if grand_total %}
+                    <li><a href="{% url 'view_cart' %}"> {% if grand_total %}
                             £{{ grand_total|floatformat:2 }}
                             {% else %}
                             £0.00
@@ -139,7 +139,7 @@
                                 </div>
                             </nav>
                     </li>
-                    <li><a href=""> {% if grand_total %}
+                    <li><a href="{% url 'view_cart' %}"> {% if grand_total %}
                             £{{ grand_total|floatformat:2 }}
                             {% else %}
                             £0.00
