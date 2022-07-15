@@ -38,8 +38,8 @@
 <div id="product-view">
     <div class="row">
         {% for product in products %}
-        <div class="col s12 m6 l3">
-            <div class="card">
+        <div id="card-list-container-main" class="col s12 m6 l3">
+            <div id="card-list-container" class="card">
                 <div class="card-image">
                     {% if product.image %}
                     <a href="{% url 'product-detail' product.id %}">
