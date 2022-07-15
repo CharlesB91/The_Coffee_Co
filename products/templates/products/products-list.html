@@ -4,7 +4,7 @@
 {% block content %}
 
 <div class="row">
-    <div class="col s6">
+    <div id="product-info" class="col s6">
         <p>
             {% if search_term or current_categories or current_sorting != 'None_None' %}
             <span><a href="{% url 'products' %}">Products Home</a>|</span>
