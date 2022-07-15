@@ -147,3 +147,10 @@ footer.page-footer {
   #product-detail-name {
     text-align: left;
   }
+
+  /* Shopping Cart */
+
+  #cart-image img {
+    width: 300px;
+    height: 300px;
+  }
