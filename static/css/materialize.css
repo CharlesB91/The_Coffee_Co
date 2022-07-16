@@ -5249,8 +5249,8 @@ small {
 
 .btn, .btn-large, .btn-small {
   text-decoration: none;
-  color: #fff;
-  background-color: #26a69a;
+  color: white;
+  background-color: #444 !important;
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: background-color .2s ease-out;
