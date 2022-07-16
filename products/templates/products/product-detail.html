@@ -4,18 +4,20 @@
 {% block content %}
 
 <div id="product-detail" class="row">
-  <div id="product-detail-img" class="col s6">
-    {% if product.image %}
-    <a href="{{ product.image.url }}" target="_blank">
-      <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-    </a>
-    {% else %}
-    <a href="">
-      <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-    </a>
-    {% endif %}
+  <div id="product-detail-img" class="col s12 m4">
+    <div class="card-image">
+      {% if product.image %}
+      <a href="{% url 'product-detail' product.id %}">
+          <img class="responsive-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+      </a>
+      {% else %}
+      <a href="{% url 'product-detail' product.id %}">
+          <img class="responsive-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+      </a>
+      {% endif %}
   </div>
-  <div id="product-detail-name" class="col s6">
+  </div>
+  <div id="product-detail-name" class="col s12 m4">
     <h3>{{ product.name }}</h3>
     <h5>£{{ product.price }}</h5>
     <p>{{ product.description }}</p>
