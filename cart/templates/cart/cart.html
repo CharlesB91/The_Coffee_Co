@@ -22,7 +22,7 @@
                         id="id_qty_{{ item.item_id }}">
                     <input type="submit" class="btn" value="Update">
                 </form>
-                <form class="form" action="" method="POST">
+                <form class="form" action="{% url 'remove_from_cart' item.item_id %}" method="POST">
                     {% csrf_token %}
                     <input type="submit" class="btn" value="Remove Item">
                 </form>
