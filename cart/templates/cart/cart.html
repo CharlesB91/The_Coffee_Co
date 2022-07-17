@@ -14,8 +14,18 @@
             <div class="card-content">
                 <h5>{{ item.product.name }}</h5>
                 <p>{{ item.product.price }}</p>
-                <p>{{ item.quantity }}</p>
-                <p>{{ item.product.price }}</p>
+                <form class="form" action="" method="POST">
+                    {% csrf_token %}
+                    <p>Quantity</p>
+                    <input class="form-control form-control-sm qty_input" type="number" name="quantity"
+                        value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}"
+                        id="id_qty_{{ item.item_id }}">
+                    <input type="submit" class="btn" value="Update">
+                </form>
+                <form class="form" action="" method="POST">
+                    {% csrf_token %}
+                    <input type="submit" class="btn" value="Remove Item">
+                </form>
             </div>
         </div>
     </div>
