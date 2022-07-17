@@ -179,13 +179,14 @@
             font-size: 120%;
         }
 
-        #product-info a, #product-detail a {
+        #product-info a,
+        #product-detail a {
             color: inherit;
         }
 
 
         /* Product Detail */
-        
+
 
         #product-detail {
             width: 100%;
@@ -341,8 +342,27 @@
     </header>
 
     {% if messages %}
-    <div></div>
+    {% for message in messages %}
+    {% if message.tags == 'success'%}
+    <script>
+        M.toast({html: '{{ message }}'})
+    </script>
+    {% elif message.tags == 'info' %}
+    <script>
+        M.toast({html: '{{ message }}'})
+    </script>
+    {% elif message.tags == 'warning' %}
+    <script>
+        M.toast({html: '{{ message }}'})
+    </script>
+    {% elif message.tags == 'error' %}
+    <script>
+        M.toast({html: '{{ message }}'})
+    </script>
     {% endif %}
+    {% endfor %}
+    {% endif %}
+
 
     {% block page_header %}
     {% endblock %}
