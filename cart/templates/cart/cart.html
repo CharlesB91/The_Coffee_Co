@@ -29,7 +29,7 @@
                     {% csrf_token %}
                     <input type="submit" class="btn" value="Remove Item">
                 </form>
-                <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
             </div>
         </div>
     </div>

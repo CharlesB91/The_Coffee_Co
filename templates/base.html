@@ -345,23 +345,36 @@
     {% for message in messages %}
     {% if message.tags == 'success'%}
     <script>
-        M.toast({html: '{{ message }}'})
+        M.toast({
+            html: "{{message}}",
+            classes: 'green'
+        })
     </script>
     {% elif message.tags == 'info' %}
     <script>
-        M.toast({html: '{{ message }}'})
+        M.toast({
+            html: "{{message}}",
+            classes: 'orange'
+        })
     </script>
     {% elif message.tags == 'warning' %}
     <script>
-        M.toast({html: '{{ message }}'})
+        M.toast({
+            html: "{{message}}",
+            classes: 'yellow'
+        })
     </script>
     {% elif message.tags == 'error' %}
     <script>
-        M.toast({html: '{{ message }}'})
+        M.toast({
+            html: "{{message}}",
+            classes: 'red '
+        })
     </script>
     {% endif %}
     {% endfor %}
     {% endif %}
+
 
 
     {% block page_header %}
