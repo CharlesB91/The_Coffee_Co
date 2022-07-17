@@ -14,7 +14,7 @@
             <div class="card-content">
                 <h5>{{ item.product.name }}</h5>
                 <p>{{ item.product.price }}</p>
-                <form class="form" action="" method="POST">
+                <form class="form" action="{% url 'edit_cart' item.item_id %}" method="POST">
                     {% csrf_token %}
                     <p>Quantity</p>
                     <input class="form-control form-control-sm qty_input" type="number" name="quantity"
