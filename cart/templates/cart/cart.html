@@ -20,29 +20,32 @@
                 <form class="form" action="{% url 'edit_cart' item.item_id %}" method="POST">
                     {% csrf_token %}
                     <p>Quantity</p>
-                    <input class="form-control form-control-sm qty_input" type="number" name="quantity"
+                    <div class="btn-space">
+                        <input class="form-control form-control-sm qty_input" type="number" name="quantity"
                         value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}"
                         id="id_qty_{{ item.item_id }}">
-                    <input type="submit" class="btn" value="Update">
+                    <input type="submit" class="btn yellow lighten-1 grey-text" value="Update">
+                    </div>
                 </form>
-                <form class="form" action="{% url 'remove_from_cart' item.item_id %}" method="POST">
-                    {% csrf_token %}
-                    <input type="submit" class="btn" value="Remove Item">
-                </form>
-                <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
-                
+                <div class="btn-space">
+                    <form class="form" action="{% url 'remove_from_cart' item.item_id %}" method="POST">
+                        {% csrf_token %}
+                        <input type="submit" class="btn" value="Remove Item">
+                    </form>
+                    <p class="my-0">Subtotal £{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
 {% endfor %}
     <div id="button-row" class="row">
-        <div class="">
+        <div class="btn-space">
             <a href="{% url 'checkout' %}">
-                <button class="btn">CheckOut</button>
+                <button class="btn  green lighten-1">CheckOut</button>
             </a>
         </div>
-        <div class="">
+        <div class="btn-space">
             <a href="{% url 'products' %}">
                 <button class="btn">Keep Shopping</button>
             </a>
