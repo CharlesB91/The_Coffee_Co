@@ -30,11 +30,24 @@
                     <input type="submit" class="btn" value="Remove Item">
                 </form>
                 <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                
             </div>
         </div>
     </div>
 </div>
 {% endfor %}
+    <div id="button-row" class="row">
+        <div class="">
+            <a href="{% url 'checkout' %}">
+                <button class="btn">CheckOut</button>
+            </a>
+        </div>
+        <div class="">
+            <a href="{% url 'products' %}">
+                <button class="btn">Keep Shopping</button>
+            </a>
+        </div>
+    </div>
 <div class="cart-head">
     <h6><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
     <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
@@ -43,7 +56,6 @@
     <p>
         You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
     </p>
-</div>
 {% endif %}
 {% else %}
 <p>Your bag is empty.</p>
