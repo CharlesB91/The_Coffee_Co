@@ -4,6 +4,46 @@
 
 {% block content %}
 
-<h3>Order Successful</h3>
+<div id="checkoutheader">
+    <h3>Order Successful</h3>
+<h5>A confirmation email has been sent to {{ order.email }}</h5>
+</div>
+
+<div id="success-container">
+    <div id="ordercard" class="row">
+        <div class="col m6">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Order Summary</span>
+                    <h6>Name:</h6>
+                    <p>{{ order.full_name }}</p>
+                    <h6>Order Number:</h6>
+                    <p>{{ order.order_number }}</p>
+                    <h6>Order Date:</h6>
+                    <p>{{ order.date }}</p>
+                    <h6>Product:</h6>
+                    {% for item in order.lineitems.all %}
+                    <p>
+                        {{ item.product.name }}
+                    </p>
+                    <h6>Quantity:</h6>
+                    <p>{{ item.quantity }} x {{ item.product.price }} each</p>
+                    {% endfor %}
+                    <h6>First Line Address:</h6>
+                    <p>{{ order.street_address1 }}</p>
+                    <h6>Town/City:</h6>
+                    <p>{{ order.town_or_city }}</p>
+                    <h6>PostCode</h6>
+                    <p>{{ order.postcode }}</p>
+                    <h6>Delivery Cost</h6>
+                    <p>£{{ order.delivery_cost }}</p>
+                    <h6>Total</h6>
+                    <p>£{{ order.grand_total }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
 
 {% endblock %}
