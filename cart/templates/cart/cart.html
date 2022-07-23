@@ -22,9 +22,9 @@
                     <p>Quantity</p>
                     <div class="btn-space">
                         <input class="form-control form-control-sm qty_input" type="number" name="quantity"
-                        value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}"
-                        id="id_qty_{{ item.item_id }}">
-                    <input type="submit" class="btn grey lighten-3 black-text" value="Update">
+                            value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}"
+                            id="id_qty_{{ item.item_id }}">
+                        <input type="submit" class="btn grey lighten-3 black-text" value="Update">
                     </div>
                 </form>
                 <div class="btn-space">
@@ -39,18 +39,18 @@
     </div>
 </div>
 {% endfor %}
-    <div id="button-row" class="row">
-        <div class="btn-space">
-            <a href="{% url 'checkout' %}">
-                <button class="btn  green lighten-1">CheckOut</button>
-            </a>
-        </div>
-        <div class="btn-space">
-            <a href="{% url 'products' %}">
-                <button class="btn">Keep Shopping</button>
-            </a>
-        </div>
+<div id="button-row" class="row">
+    <div class="btn-space">
+        <a href="{% url 'checkout' %}">
+            <button class="btn  green lighten-1">CheckOut</button>
+        </a>
     </div>
+    <div class="btn-space">
+        <a href="{% url 'products' %}">
+            <button class="btn">Keep Shopping</button>
+        </a>
+    </div>
+</div>
 <div class="cart-head">
     <h6><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
     <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
@@ -59,11 +59,11 @@
     <p>
         You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
     </p>
-{% endif %}
-{% else %}
-<p>Your bag is empty.</p>
-<a href="{% url 'products' %}">
-    <span>Keep Shopping</span>
-</a>
-{% endif %}
-{% endblock %}
+    {% endif %}
+    {% else %}
+    <p>Your bag is empty.</p>
+    <a href="{% url 'products' %}">
+        <span>Keep Shopping</span>
+    </a>
+    {% endif %}
+    {% endblock %}
