@@ -3,6 +3,9 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -2366,8 +2369,8 @@ svg:not(:root) {
  * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
-button,
-input,
+
+
 optgroup,
 select,
 textarea {
@@ -2586,12 +2589,10 @@ html {
           box-sizing: inherit;
 }
 
-button,
-input,
 optgroup,
 select,
 textarea {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Oxygen', sans-serif;
 }
 
 ul:not(.browser-default) {
