@@ -5584,6 +5584,7 @@ button.btn-floating {
 }
 
 .dropdown-content li > a, .dropdown-content li > span {
+  font-family:'Oxygen', sans-serif !important;
   font-size: 16px;
   color: #444 !important;
   display: block;

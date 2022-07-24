@@ -4,6 +4,20 @@
 
 {% block content %}
 
-<h1>profile</h1>
+<h1>Your Profile</h1>
+
+<div class="row">
+    <div class="col s12 m6">
+        <h5>Delivery Info</h5>
+        <form action="{% url 'profile' %}" method="POST" id="profile-update-form">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button class="btn" >Update Information</button>
+        </form>
+    </div>
+    <div class="col s12 m6">
+       <h5>Order History</h5>
+    </div>
+  </div>
 
 {% endblock %}
