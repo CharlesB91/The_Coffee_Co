@@ -4,6 +4,8 @@
 {% block content %}
 
 <div id="product-detail" class="row">
+  <a class="btn btn-signup right" href="{% url 'edit_product' product.id %}" aria-label="edit-workout"
+  >Edit Workout</a>
   <div id="product-detail-img" class="col s12 m4">
     <div class="card-image">
       {% if product.image %}
