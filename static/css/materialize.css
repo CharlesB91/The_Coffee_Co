@@ -4,7 +4,6 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 .materialize-red {
   background-color: #e51c23 !important;
@@ -2592,7 +2591,7 @@ html {
 optgroup,
 select,
 textarea {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Bebas Neue', cursive;
 }
 
 ul:not(.browser-default) {
@@ -5584,7 +5583,7 @@ button.btn-floating {
 }
 
 .dropdown-content li > a, .dropdown-content li > span {
-  font-family:'Oxygen', sans-serif !important;
+  font-family: 'Bebas Neue', cursive !important;
   font-size: 16px;
   color: #444 !important;
   display: block;
