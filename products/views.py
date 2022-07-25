@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product, Category
+from .models import Product, Category, Review
 from django.db.models.functions import Lower
-from .forms import AddProductForm, EditProductForm
+from .forms import AddProductForm, EditProductForm, ReviewForm
 from django.views import generic, View
 
 # Create your views here.
@@ -62,9 +62,23 @@ def view_product_detail(request, product_id):
     """ A view of the product detail """
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = product.comments.filter(approved=True).order_by("-created_on")
+
+    review_form = ReviewForm(data=request.POST)
+    if review_form.is_valid():
+        review_form.instance.email = request.user.email
+        review_form.instance.name = request.user.username
+        review = review_form.save(commit=False)
+        review.product = product
+        review.save()
+    else:
+        review_form = ReviewForm()
 
     context = {
         'product': product,
+        "reviews": reviews,
+        "reviewed": True,
+        "review_form": review_form,
     }
 
     return render(request, 'products/product-detail.html', context)

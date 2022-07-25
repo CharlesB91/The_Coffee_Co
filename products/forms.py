@@ -1,4 +1,4 @@
-from .models import Product, Category
+from .models import Product, Category, Review
 from django import forms
 from django.forms import ModelForm
 
@@ -17,3 +17,10 @@ class EditProductForm(forms.ModelForm):
     class Meta:
         model = Product
         fields = "__all__"
+
+
+class ReviewForm(forms.ModelForm):
+
+    class Meta:
+        model = Review
+        fields = ('body',)
