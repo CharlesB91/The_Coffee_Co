@@ -41,19 +41,25 @@
         <span class="text-uppercase">Keep Shopping</span>
         <input type="hidden" name="redirect_url" value="{{ request.path }}">
       </a>
+      <a class="modal-trigger" href="#modal2">Product Reviews</a>
     </form>
-    {% for review in reviews %}
-    <h4>{{ review.name }}</h4>
-    <h6>{{ review.created_on }}</h6>
-    <h6>{{ review.body | linebreaks }}</h6>
-    <hr class="comment-line" />
-    {% endfor %}
+  <!-- Modal Structure -->
+  <div id="modal2" class="modal reviewmodal">
+    <div class="modal-content">
+      {% for review in reviews %}
+      <h5>From: {{ review.name }}</h5>
+      <h6>Date: {{ review.created_on }}</h6>
+      <h6>Review: {{ review.body | linebreaks }}</h6>
+      <hr class="comment-line" />
+      {% endfor %}
+    </div>
+  </div>
     {% endif %}
     {% if commented %}
     <div role="alert">Your comment is awaiting approval</div>
     <div class="input-field">
       {% else %}
-      <h3>Leave a comment:</h3>
+      <h5>Love This Product? Give it a review:</h5>
       <p>Posting as: {{ user.username }}</p>
       <form method="post" id="review_form">
         {{ review_form | crispy }} {% csrf_token %}
@@ -64,5 +70,11 @@
       {% endif %}
   </div>
 </div>
+
+<script>
+    $(document).ready(function(){
+    $('.reviewmodal').modal();
+  });
+</script>
 
 {% endblock %}

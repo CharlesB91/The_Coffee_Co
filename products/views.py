@@ -71,6 +71,8 @@ def view_product_detail(request, product_id):
         review = review_form.save(commit=False)
         review.product = product
         review.save()
+        review_form = ReviewForm()
+        messages.success(request, 'Thanks ! Your Review Is Pending Approval')
     else:
         review_form = ReviewForm()
 
@@ -80,6 +82,10 @@ def view_product_detail(request, product_id):
         "reviewed": True,
         "review_form": review_form,
     }
+
+
+
+
 
     return render(request, 'products/product-detail.html', context)
 
