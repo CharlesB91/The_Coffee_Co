@@ -310,7 +310,9 @@
             margin-bottom: 20px;
         }
 
-        #signbtn, #signupbtn, #resetbtn {
+        #signbtn,
+        #signupbtn,
+        #resetbtn {
             font-family: 'Bebas Neue', cursive !important;
             font-size: 120%;
             margin-left: 5px;
@@ -321,10 +323,22 @@
         }
 
         .fontbtn {
-            font-family:'Bebas Neue', cursive !important;
+            font-family: 'Bebas Neue', cursive !important;
             letter-spacing: 1px !important;
         }
 
+        #testimonal-area {
+            text-align: center;
+            background-color: #F7ECE1
+        }
+
+        #testimonal-area h1 {
+            padding-top: 20px;
+        }
+
+        #carousel-item1 {
+            padding-top: 50px;
+        }
     </style>
 
 </head>
@@ -538,6 +552,18 @@
             window.location.replace(currentUrl);
         }
     })
+
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true,
+    });
+
+    autoplay();
+
+    function autoplay() {
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, 4500);
+    }
 </script>
 
 </html>

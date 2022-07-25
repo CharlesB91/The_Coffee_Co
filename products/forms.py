@@ -3,7 +3,7 @@ from django import forms
 from django.forms import ModelForm
 
 
-# Create Workout Form
+# Create Product
 
 class AddProductForm(forms.ModelForm):
 
@@ -11,6 +11,7 @@ class AddProductForm(forms.ModelForm):
         model = Product
         fields = "__all__"
 
+# Edit Product
 
 class EditProductForm(forms.ModelForm):
 
@@ -18,6 +19,7 @@ class EditProductForm(forms.ModelForm):
         model = Product
         fields = "__all__"
 
+# Rweview Product
 
 class ReviewForm(forms.ModelForm):
 

@@ -59,6 +59,7 @@
   <div class="parallax"><img src="{% static 'media/Coffee.jpg'%}" alt="Unsplashed background img 1"></div>
 </div>
 
+
 <!-- About Us -->
 <div class="container">
   <div class="section">
@@ -77,4 +78,41 @@
 
   </div>
 </div>
+
+<!-- Testimonals Section -->
+
+<div id="testimonal-area">
+  <h1>What Our Customer Said</h1>
+  <div id="carousel-item1" class="carousel carousel-slider center">
+    {% for testimonial in testimonials %}
+    <div class="carousel-item" href="#one!">
+      <h5>{{ testimonial.name }} Said:</h5>
+      <h6>"{{ testimonial.body }}"</h6>
+    </div>
+    {% endfor %}
+  </div>
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal9">Love us ? Tell Us What you think</a>
+</div>
+<div id="modal9" class="modal testimonalmodal">
+  <div class="modal-content">
+    {% if request.user.is_authenticated %}
+    <p>Posting as: {{ user.username }}</p>
+    <form method="post" id="testimonial_form">
+      {{ testimonial_form | crispy }} {% csrf_token %}
+      <button type="submit" class="waves-effect waves-light btn fontbtn" aria-label="submit-review">
+        Submit
+      </button>
+    </form>
+    {% else %}
+    <h2>Please Log in</h2>
+    {% endif %}
+  </div>
+</div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('.testimonalmodal').modal();
+  });
+</script>
 {% endblock %}
