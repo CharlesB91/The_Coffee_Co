@@ -91,11 +91,12 @@
     </div>
     {% endfor %}
   </div>
+  {% if request.user.is_authenticated %}
   <a class="waves-effect waves-light btn modal-trigger" href="#modal9">Love us ? Tell Us What you think</a>
+  {% endif %}
 </div>
 <div id="modal9" class="modal testimonalmodal">
   <div class="modal-content">
-    {% if request.user.is_authenticated %}
     <p>Posting as: {{ user.username }}</p>
     <form method="post" id="testimonial_form">
       {{ testimonial_form | crispy }} {% csrf_token %}
@@ -103,9 +104,6 @@
         Submit
       </button>
     </form>
-    {% else %}
-    <h2>Please Log in</h2>
-    {% endif %}
   </div>
 </div>
 </div>
