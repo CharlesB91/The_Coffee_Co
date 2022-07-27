@@ -45,11 +45,11 @@
                     <a href="{% url 'product-detail' product.id %}">
                         <img class="responsive-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                     </a>
-                    {% else %}
+                    <!-- {% else %}
                     <a href="{% url 'product-detail' product.id %}">
                         <img class="responsive-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     </a>
-                    {% endif %}
+                    {% endif %} -->
                 </div>
                 <div class="card-content">
                     <p>{{ product.name }}</p>
