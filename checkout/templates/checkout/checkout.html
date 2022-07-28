@@ -9,7 +9,7 @@
 <h4 id="checkout-header">CheckOut</h4>
 <div id="checkout" class="row">
     <div class="col m6 s12">
-        <form action="" method="POST">
+        <form action="{% url 'checkout' %}" method="POST" id="payment-form">
             {% csrf_token %}
             <fieldset>
                 <legend>Details</legend>
