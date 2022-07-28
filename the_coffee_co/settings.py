@@ -30,6 +30,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 ALLOWED_HOSTS = ['thecoffeeco.herokuapp.com', 'localhost']
 
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = TRUE
 
 # Application definition
 
