@@ -234,6 +234,10 @@ footer.page-footer {
 
 /* Checkout */
 
+.buttons-main1 {
+    padding: 10px;
+}
+
 #checkout {
     height: 100%;
     overflow: hidden;

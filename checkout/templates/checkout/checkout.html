@@ -4,6 +4,7 @@
 
 {% block content %}
 
+
 <h4 id="checkout-header">CheckOut</h4>
 <div id="checkout" class="row">
     <div class="col m6 s12">
@@ -45,7 +46,7 @@
                 <div id="card-errors" role="alert"></div>
                 <input type="hidden" value="{{ client_secret }}" name="client_secret">
             </fieldset>
-            <div>
+            <div class="buttons-main1">
                 <a class="btn fontbtn" href="{% url 'view_cart' %}">
                     <span>
                     </span>
