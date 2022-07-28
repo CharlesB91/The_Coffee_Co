@@ -31,9 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 ALLOWED_HOSTS = ['thecoffeeco.herokuapp.com', 'localhost']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = TRUE
+DEBUG = 'DEVELOPMENT' in os.environ
 
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
