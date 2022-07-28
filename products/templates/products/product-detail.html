@@ -3,6 +3,7 @@
 
 {% block content %}
 
+<!-- Edit / Delete Options -->
 
 {% if user.is_staff %}
 <div class="product-options-staff">
@@ -11,6 +12,8 @@
     Product</a>
 </div>
 {% endif %}
+
+<!-- Product Detail Section -->
 
 <div id="product-detail" class="row">
   <div id="product-detail-img" class="col s12 m4">

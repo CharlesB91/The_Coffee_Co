@@ -3,11 +3,13 @@
 
 {% block content %}
 
+<!-- Add product form -->
+
 <div class="form-area1">
   <form id="add-form" method="POST" enctype="multipart/form-data">
     <h1>Add Product</h1>
     {% csrf_token %} {{ form.media }} {{form.as_p}}
-    <input type="submit" class="btn signbtn" name="submit"/>
+    <input type="submit" class="btn signbtn" name="submit" />
   </form>
 </div>
 
