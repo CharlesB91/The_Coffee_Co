@@ -228,6 +228,10 @@ footer.page-footer {
     justify-content: center;
 }
 
+.btn, .btn-large, .btn-small {
+    font-family: 'Bebas Neue', cursive !important;
+}
+
 /* Checkout */
 
 #checkout {
@@ -343,5 +347,6 @@ footer.page-footer {
 
 footer {
     font-family: 'Rubik', sans-serif;
-    ;
+    text-align: left !important;
+    height: 600px;
 }
