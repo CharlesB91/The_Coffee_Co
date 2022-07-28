@@ -53,7 +53,7 @@
                 </div>
                 <div class="card-content">
                     <p>{{ product.name }}</p>
-                    <p>{{ product.price }}</p>
+                    <p>£{{ product.price }}</p>
                     {% if product.category %}
                     <p>
                         <a href="{% url 'products' %}?category={{ product.category.name }}">{{ product.category.friendly_name }}

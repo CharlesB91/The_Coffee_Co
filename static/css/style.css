@@ -156,6 +156,16 @@ footer.page-footer {
     color: inherit;
 }
 
+.card-content p {
+    font-size: 120%;
+    color: #444;
+}
+
+.select-wrapper input.select-dropdown {
+    font-family: 'Bebas Neue', cursive !important;
+    color: #444;
+}
+
 
 /* Product Detail */
 
@@ -174,6 +184,23 @@ footer.page-footer {
 .product-detail-space {
     padding: 10px;
 }
+
+.form-area1 {
+    width: 500px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.product-options-staff {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  #product-detail-name {
+    font-size: 120%;
+  }
+
 
 /* Shopping Cart */
 
@@ -267,13 +294,13 @@ footer.page-footer {
 
 /* Log In & Register Page */
 
-.veify-area {
+.form-area1 {
     width: 500px;
     margin-left: 20px;
     margin-bottom: 20px;
 }
 
-#signbtn,
+.signbtn,
 #signupbtn,
 #resetbtn {
     font-family: 'Bebas Neue', cursive !important;
