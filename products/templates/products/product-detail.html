@@ -3,8 +3,10 @@
 
 {% block content %}
 
+{% if request.user.is_authenticated %}
 <a class="btn btn-signup right" href="{% url 'edit_product' product.id %}" aria-label="edit-workout">Edit Product</a>
 <a class="btn btn-signup right" href="{% url 'delete_product' product.id %}" aria-label="edit-workout">Delete Product</a>
+{% endif %}
 
 <div id="product-detail" class="row">
   <div id="product-detail-img" class="col s12 m4">
@@ -43,7 +45,9 @@
         <span class="text-uppercase">Keep Shopping</span>
         <input type="hidden" name="redirect_url" value="{{ request.path }}">
       </a>
+      {% if request.user.is_authenticated %}
       <a class="modal-trigger green-text" href="#modalcommentbox">Love This Product ? Review It</a>
+      {% endif %}
     </form>
   <!-- Modal Structure -->
   <div id="modal2" class="modal reviewmodal">
