@@ -12,6 +12,8 @@ I wanted to create an ecommerce web based application allowing make purcases whi
 
 ## User Stories
 
+![Kan-ban Board](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/kanban.png)
+
 [Kanban Board](https://github.com/CharlesB91/engage-fitness/projects/1)
 
 With the user stories in mind, I created the below strategy table using MOSCOW principles.
@@ -42,3 +44,5 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 
 - USER STORY: As a admin/staff user i can add products to the site - MUST HAVE
 - USER STORY: As a admin/staff user i can edit & remove products - MUST HAVE
+
+
