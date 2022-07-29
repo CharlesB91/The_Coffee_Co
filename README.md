@@ -57,7 +57,8 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 
 ### Colour
 
-![Colour-Pallet](https://github.com/CharlesB91/engage-fitness/blob/main/static/img/read-me-img/colours.PNG)
+![Colour-Pallet1](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/colours1.png)
+![Colour-Pallet1](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/colour2.png)
 
 - For this area i focused on only 2 particular colours.
 - #8ca1a5 for the nav bar.
