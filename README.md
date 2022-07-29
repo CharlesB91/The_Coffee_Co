@@ -45,4 +45,22 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 - USER STORY: As a admin/staff user i can add products to the site - MUST HAVE
 - USER STORY: As a admin/staff user i can edit & remove products - MUST HAVE
 
+## Design
+
+### Wireframe
+
+[Wireframes1](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes.jpg)
+[Wireframes3](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes2.jpg)
+[Wireframes4](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes4.jpg)
+[Wireframes5](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes5.jpg)
+[Wireframes6](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes8.jpg)
+
+### Colour
+
+![Colour-Pallet](https://github.com/CharlesB91/engage-fitness/blob/main/static/img/read-me-img/colours.PNG)
+
+- For this area i focused on only 2 particular colours.
+- #8ca1a5 for the nav bar.
+- #fffff for the background colour - feel this creates a great contract between this and the typography as i was looking for this to stand out.
+- I used the built in colours from materialize.css for the buttons within the site.
 
