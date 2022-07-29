@@ -1,4 +1,4 @@
-# Engage Fitness
+# The Coffee Co
 
 As a massive coffee love i wanted to create something that i am passion about not. Not something that just gives me my morning kick. I have decided to create this fully featured online coffee shop. This ecommerce application allows users to browser products, make purchases, leave product reviews and post site tesimonials. This store ranges from fresh coffee, pod coffee, coffee machines and accessories. 
 
