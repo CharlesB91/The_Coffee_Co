@@ -10,18 +10,12 @@
     <title>The Coffe Co</title>
     {% endblock %}
 
-    {% block extra_meta %}
-    {% endblock %}
-
     <title>The Coffee Co {% block extra_title %}{% endblock %}</title>
 
     {% block corecss %}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    {% endblock %}
-
-    {% block extra_css %}
     {% endblock %}
 
 
@@ -32,9 +26,6 @@
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
-    {% block extra_js %}
-    {% endblock %}
-
 </head>
 
 <body id="body">
@@ -42,39 +33,51 @@
         <!-- Nar Bar -->
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
-                <a id="logo-container" href="{% url 'home' %}" class="brand-logo">The Coffee Co</a>
+                <a id="logo-container" href="{% url 'home' %}" class="brand-logo" aria-label="home-page-logo">The Coffee
+                    Co</a>
                 <ul class="right hide-on-med-and-down">
                     <li>
-                        <a class='dropdown-trigger1' href='#' data-target='dropdown1'>My Account</a>
+                        <a class='dropdown-trigger1' href='#' data-target='dropdown1' aria-label="account-drop-downn">My
+                            Account</a>
                         <ul id='dropdown1' class='dropdown-content'>
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="{% url 'add_product' %}" class="dropdown-item">Add Product</a>
+                            <a href="{% url 'add_product' %}" class="dropdown-item" aria-label="add_product">Add
+                                Product</a>
                             {% endif %}
-                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            <a href="{% url 'profile' %}" class="dropdown-item" aria-label="my-profile">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item" aria-label="log-out">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item"
+                                aria-label="register">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item" aria-label="Login">Login</a>
                             {% endif %}
                         </ul>
                     </li>
                     <li>
-                        <a class='dropdown-trigger2' href='#' data-target='dropdown2'>Products</a>
+                        <a class='dropdown-trigger2' href='#' data-target='dropdown2'
+                            aria-label="product-filter-dropdown">Products</a>
                         <ul id='dropdown2' class='dropdown-content'>
-                            <li><a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By
+                            <li><a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item"
+                                    aria-label="product-filter-by-price">By
                                     Price</a></li>
-                            <li><a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By
+                            <li><a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item"
+                                    aria-label="product-filter-by-category">By
                                     Category</a></li>
-                            <li><a href="{% url 'products' %}" class="dropdown-item">All Products</a></li>
+                            <li><a href="{% url 'products' %}" class="dropdown-item" aria-label="all-products">All
+                                    Products</a></li>
 
                         </ul>
                     </li>
-                    <li><a href="{% url 'products' %}?category=fresh_coffee">Fresh Coffee</a></li>
-                    <li><a href="{% url 'products' %}?category=machines">Coffee Machines</a></li>
-                    <li><a href="{% url 'products' %}?category=accessories">Accessories</a></li>
+                    <li><a href="{% url 'products' %}?category=fresh_coffee" aria-label="fresh-coffee">Fresh Coffee</a>
+                    </li>
+                    <li><a href="{% url 'products' %}?category=machines" aria-label="coffee-machines">Coffee
+                            Machines</a></li>
+                    <li><a href="{% url 'products' %}?category=accessories" aria-label="accessories">Accessories</a>
+                    </li>
                     <li>
-                        <a class="modal-trigger" href="#modal1"><i class="material-icons">search</i></a>
+                        <a class="modal-trigger" href="#modal1"><i class="material-icons"
+                                aria-label="search-box">search</i></a>
                         <div id="modal1" class="modal">
                             <nav>
                                 <div class="nav-wrapper">
@@ -90,7 +93,7 @@
                             </nav>
                     </li>
                     <li> <i class="material-icons">local_grocery_store</i></li>
-                    <li><a href="{% url 'view_cart' %}"> {% if grand_total %}
+                    <li><a href="{% url 'view_cart' %}" aria-label="view-cart"> {% if grand_total %}
                             £{{ grand_total|floatformat:2 }}
                             {% else %}
                             £0.00
@@ -98,33 +101,43 @@
                 </ul>
                 <ul id="nav-mobile" class="sidenav">
                     <li>
-                        <a class='dropdown-trigger3' href='#' id="user-options" data-target='dropdown3'>My Account</a>
+                        <a class='dropdown-trigger3' href='#' id="user-options" data-target='dropdown3'
+                            aria-label="mobile-drop-down">My Account</a>
                         <ul id='dropdown3' class='dropdown-content'>
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="" class="dropdown-item">Product Management</a>
+                            <a href="{% url 'add_product' %}" class="dropdown-item" aria-label="add-product">Add
+                                Product</a>
                             {% endif %}
-                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            <a href="{% url 'profile' %}" class="dropdown-item" aria-label="profile">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item" aria-label="logout">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item"
+                                aria-label="register">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item" aria-label="login">Login</a>
                             {% endif %}
                         </ul>
                     </li>
                     <li>
-                        <a class='dropdown-trigger4' href='#' data-target='dropdown4'>Products</a>
+                        <a class='dropdown-trigger4' href='#' data-target='dropdown4'
+                            aria-label="product-filter-dropdown">Products</a>
                         <ul id='dropdown4' class='dropdown-content'>
-                            <li><a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By
+                            <li><a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item"
+                                    aria-label="product-filter-by-price">By
                                     Price</a></li>
-                            <li><a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By
+                            <li><a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item"
+                                    aria-label="product-filter-by-category">By
                                     Category</a></li>
-                            <li><a href="{% url 'products' %}" class="dropdown-item">All Products</a></li>
+                            <li><a href="{% url 'products' %}" class="dropdown-item" aria-label="all-products">All
+                                    Products</a></li>
                         </ul>
                     </li>
-                    <li><a href="{% url 'products' %}?category=fresh_coffee">Fresh Coffee</a></li>
-                    <li><a href="{% url 'products' %}?category=machines">Coffee Machines</a></li>
-                    <li><a href="{% url 'products' %}?category=accessories">Accessories</a></li>
+                    <li><a href="{% url 'products' %}?category=fresh_coffee" aria-label="fresh-coffee">Fresh Coffee</a>
+                    </li>
+                    <li><a href="{% url 'products' %}?category=machines" aria-label="coffee-machines">Coffee
+                            Machines</a></li>
+                    <li><a href="{% url 'products' %}?category=accessories" aria-label="accessories">Accessories</a>
+                    </li>
                     <li>
                         <div class="modal2">
                             <nav>
@@ -140,7 +153,7 @@
                                 </div>
                             </nav>
                     </li>
-                    <li><a href="{% url 'view_cart' %}"> {% if grand_total %}
+                    <li><a href="{% url 'view_cart' %}" aria-label="view-cart"> {% if grand_total %}
                             £{{ grand_total|floatformat:2 }}
                             {% else %}
                             £0.00
@@ -184,17 +197,6 @@
     {% endif %}
     {% endfor %}
     {% endif %}
-
-
-
-    {% block page_header %}
-    {% endblock %}
-
-    {% block content %}
-    {% endblock %}
-
-    {% block postloadjs %}
-    {% endblock %}
 
     <!-- Footer -->
     <footer class="page-footer grey darken-3">
