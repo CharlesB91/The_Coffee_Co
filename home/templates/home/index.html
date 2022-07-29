@@ -92,7 +92,7 @@
     {% endfor %}
   </div>
   {% if request.user.is_authenticated %}
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal9">Love us ? Tell Us What you think</a>
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal9" aria-label="testimonal-review">Love us ? Tell Us What you think</a>
   {% endif %}
 </div>
 <div id="modal9" class="modal testimonalmodal">
@@ -107,7 +107,6 @@
   </div>
 </div>
 </div>
-
 <script>
   $(document).ready(function () {
     $('.testimonalmodal').modal();
@@ -115,10 +114,10 @@
 
   // Testimonal Carousel
 
-  $('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators: true,
-  });
+  // $('.carousel.carousel-slider').carousel({
+  //   fullWidth: true,
+  //   indicators: true,
+  // });
 
   autoplay();
 
