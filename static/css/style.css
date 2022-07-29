@@ -9,6 +9,7 @@ html {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden !important;
+    width: auto!important;
 }
 
 #body {
@@ -195,11 +196,11 @@ footer.page-footer {
     display: flex;
     justify-content: center;
 
-  }
+}
 
-  #product-detail-name {
+#product-detail-name {
     font-size: 120%;
-  }
+}
 
 
 /* Shopping Cart */
@@ -228,7 +229,9 @@ footer.page-footer {
     justify-content: center;
 }
 
-.btn, .btn-large, .btn-small {
+.btn,
+.btn-large,
+.btn-small {
     font-family: 'Bebas Neue', cursive !important;
 }
 
@@ -325,13 +328,16 @@ footer.page-footer {
     letter-spacing: 1px !important;
 }
 
+/* Testimonal Section */
+
 #testimonal-area {
     text-align: center;
-    background-color: #F7ECE1
+    background-color: #F7ECE1;
+    height: 300px;
 }
 
 #testimonal-area h1 {
-    padding-top: 20px;
+    padding-top: 100px;
 }
 
 #carousel-item1 {
