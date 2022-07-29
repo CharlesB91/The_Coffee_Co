@@ -14,27 +14,31 @@ I wanted to create an ecommerce web based application allowing make purcases whi
 
 [Kanban Board](https://github.com/CharlesB91/engage-fitness/projects/1)
 
+With the user stories in mind, I created the below strategy table using MOSCOW principles.
+
+Each story was assigned a classification of Must-Have, Should-Have, Could-Have or Won't Have. Each story was also assigned user story points,
+
 ### Unauthorised Users
 
-- USER STORY: As a site user i can successfully register for a user account.
-- USER STORY: As registered and un registered user i can browse the product list.
-- USER STORY: As a registered and un registered user i can search through the full product list using a search bar.
-- USER STORY: As a registered and unregistered user i can filter through products via price & category.
-- USER STORY: As a registered and unregistered user i can view product details.
-- USER STORY: As a registered and unregistered user i can view each product review.
-- USER STORY: As a registered and unregistered i can add multiple items to my cart. I can then view my cart with the grand total price and delivery cost if applicable.
-- USER STORY: As a registered and unregistered user i can update and remove products from my card.
-- USER STORY: As a registered and unregistered user i can make purchases via stripe.
-- USER STORY: As a registered and unregistered user i can sort products via price, name & category.
+- USER STORY: As a site user i can successfully register for a user account - MUST HAVE
+- USER STORY: As registered and un registered user i can browse the product list - MUST HAVE
+- USER STORY: As a registered and un registered user i can search through the full product list using a search bar - MUST HAVE
+- USER STORY: As a registered and unregistered user i can filter through products via price & category - MUST HAVE
+- USER STORY: As a registered and unregistered user i can view product details- MUST HAVE
+- USER STORY: As a registered and unregistered user i can view each product review - COULD HAVE
+- USER STORY: As a registered and unregistered i can add multiple items to my cart. I can then view my cart with the grand total price and delivery cost if applicable - MUST HAVE
+- USER STORY: As a registered and unregistered user i can update and remove products from my card - MUST HAVE
+- USER STORY: As a registered and unregistered user i can make purchases via stripe - MUST HAVE
+- USER STORY: As a registered and unregistered user i can sort products via price, name & category - COUD HAVE
 
 ### Authorised Users
 
-- USER STORY: As a registered User i can log in successfully using my registered email and password
-- USER STORY: As a registered User i can update my delivery details via the profile area.
-- USER STORY: As registered user i can leave product reviews.
-- USER STORY: As a registered user i can leave site testimonials.
+- USER STORY: As a registered User i can log in successfully using my registered email and password - MUST HAVE
+- USER STORY: As a registered User i can update my delivery details via the profile area - COULD HAVE
+- USER STORY: As registered user i can leave product reviews - COULD HAVE
+- USER STORY: As a registered user i can leave site testimonials - COULD HAVE
 
 ### Admin/Staff Users
 
-- USER STORY: As a admin/staff user i can add products to the site.
-- USER STORY: As a admin/staff user i can edit & remove products.
+- USER STORY: As a admin/staff user i can add products to the site - MUST HAVE
+- USER STORY: As a admin/staff user i can edit & remove products - MUST HAVE
