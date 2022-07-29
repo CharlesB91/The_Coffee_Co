@@ -49,11 +49,11 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 
 ### Wireframe
 
-[Wireframes1](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes.jpg)
-[Wireframes3](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes2.jpg)
-[Wireframes4](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes4.jpg)
-[Wireframes5](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes5.jpg)
-[Wireframes6](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes8.jpg)
+![Wireframes1](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes.jpg)
+![Wireframes3](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes2.jpg)
+![Wireframes4](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes4.jpg)
+![Wireframes5](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes5.jpg)
+![Wireframes6](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/The%20coffee%20co%20wireframes8.jpg)
 
 ### Colour
 
