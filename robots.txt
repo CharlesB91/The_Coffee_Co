@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /cart/
+Disallow: /checkout/
+Sitemap: https://thecoffeeco.herokuapp.com/sitemap.xml
