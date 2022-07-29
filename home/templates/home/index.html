@@ -82,14 +82,16 @@
 <!-- Testimonals Section -->
 
 <div id="testimonal-area">
-  <h1>What Our Customer Said</h1>
-  <div id="carousel-item1" class="carousel carousel-slider center">
-    {% for testimonial in testimonials %}
-    <div class="carousel-item" href="#one!">
-      <h5>{{ testimonial.name }} Said:</h5>
-      <h6>"{{ testimonial.body }}"</h6>
+  <a class="modal-trigger" href="#modal10"><h1>What Our Customers Said</h1></a>
+    <div id="modal10" class="modal testimonalmodalopen">
+      <div class="modal-content">
+        <h3 style="text-decoration: underline;">Our Testimonals</h3>
+        {% for testimonial in testimonials %}
+          <h5>{{ testimonial.name }} Said:</h5>
+          <h6>"{{ testimonial.body }}"</h6>
+        {% endfor %}
+      </div>
     </div>
-    {% endfor %}
   </div>
   {% if request.user.is_authenticated %}
   <a class="waves-effect waves-light btn modal-trigger" href="#modal9" aria-label="testimonal-review">Love us ? Tell Us What you think</a>
@@ -109,19 +111,11 @@
 </div>
 <script>
   $(document).ready(function () {
+    $('.testimonalmodalopen').modal();
     $('.testimonalmodal').modal();
-    $('.carousel').carousel({
-          full_width: true
-      });
   });
 
   // Testimonal Carousel
 
-  autoplay();
-
-  function autoplay() {
-    $('.carousel').carousel('next');
-    setTimeout(autoplay, 4500);
-  }
 </script>
 {% endblock %}
