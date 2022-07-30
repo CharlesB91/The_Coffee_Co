@@ -31,9 +31,6 @@ ALLOWED_HOSTS = ['thecoffeeco.herokuapp.com', 'localhost']
 
 DEBUG = False
 
-
-
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
