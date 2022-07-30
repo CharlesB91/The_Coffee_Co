@@ -336,6 +336,8 @@ footer.page-footer {
     height: 300px;
 }
 
+#testimonal-area a { color: inherit; } 
+
 #testimonal-area h1 {
     padding-top: 100px;
 }

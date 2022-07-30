@@ -76,7 +76,70 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 
 - For this area i focused one font which is "Bebas Neue", cursive; as feel this crates an assertive tone. This was used from Google Fonts. I then used 'Rubik', sans-serif; for the footer. 
 
+### Nav Bar
 
+- This area has links to product list, filtering, search box and cart. 
+
+![Footer](https://github.com/CharlesB91/engage-fitness/blob/main/static/img/read-me-img/footer.PNG)
+
+### Product List
+
+- This area features a list of each product on sale.
+- Users can click on the image to view product detail. 
+
+![Content-List](https://github.com/CharlesB91/engage-fitness/blob/main/static/img/read-me-img/content-list.PNG)
+
+### Product Detail
+
+- This area features a detailed description of the product.
+- Users can either add to bag, continue shopping, check reviews.
+
+![Content-detail](https://github.com/CharlesB91/engage-fitness/blob/main/static/img/read-me-img/detail-section.PNG)
+![Content-detail](https://github.com/CharlesB91/engage-fitness/blob/main/static/img/read-me-img/detail-section2.PNG)
+
+### Reviews
+
+- This area users can view product reviews.
+
+![Comments](https://github.com/CharlesB91/engage-fitness/blob/main/static/img/read-me-img/comments.PNG)
+
+### Cart
+
+- This is where users can see all the products they have added to their cart.
+- This area allows the user to edit, remove items & click checkout. 
+
+![Booking-Page](https://github.com/CharlesB91/engage-fitness/blob/main/static/img/read-me-img/booking.PNG)
+
+### Checkout
+
+- This area is where the users can fill in their address info and card details to complete purchase
+
+![Booking-Page](https://github.com/CharlesB91/engage-fitness/blob/main/static/img/read-me-img/booking.PNG)
+
+### Add Product
+
+- This area is restricted to only admin & staff users.
+- This will generate a form where the select user can post a workout of their choice
+- For this area there is a default image as an existing bug relating to cloudinary is preventing adding new images. 
+
+![Create-Workout](https://github.com/CharlesB91/engage-fitness/blob/main/static/img/read-me-img/create.PNG)
+![Create-Workout-Form](https://github.com/CharlesB91/engage-fitness/blob/main/static/img/read-me-img/create-form.PNG)
+
+### Edit Product
+
+- This area is restricted to only admin & staff users.
+- This will generate a form where the select user can edit a selected post.
+- For this area there is a default image as an existing bug relating to cloudinary is preventing adding new images. 
+
+![Edit-Workout](https://github.com/CharlesB91/engage-fitness/blob/main/static/img/read-me-img/edit-delete.PNG)
+![Edit-Workout-Form](https://github.com/CharlesB91/engage-fitness/blob/main/static/img/read-me-img/edit-form.PNG)
+
+### Testimonials
+
+- This area is restricted to only admin & staff users.
+- This section will offer the option to delete the selected post or revert back to the workout list. 
+
+![Delete](https://github.com/CharlesB91/engage-fitness/blob/main/static/img/read-me-img/delete.PNG)
 
 
 
