@@ -550,8 +550,8 @@ class MediaStorage(S3Boto3Storage):
 
 ### **Conclusion**
 
-My coding journey over the last 12 months has been amazing. From starting the simplest html css to creating full stack web application with online payments system. I remember fighting with css when i fist started out now my problems is with webhooks using stripe apis. I feel i have learned so much and due to this course i landed my first job in tech with i am so grateful for.
+My coding journey over the last 12 months has been amazing. From starting the simplest html css to creating full stack web application with online payments system. I remember fighting with css when i fist started out now my problems is with webhooks using stripe apis. I feel i have learned so much and due to this course i landed my first job in tech.
 
-As mentioned in this read my due to starting my new job, family and ran into some time constraints on this project. If had more time i would have completed more in-depth validator testing. There is no errors in the console so i am hoping this will be sufficient.. 
+As mentioned in this read me due to starting my new job, family i ran into some time constraints on this project. If had more time i would have completed more in-depth validator testing. There is no errors in the console so i am hoping this will be sufficient.. 
 
 I have really enjoyed learning with code institute as the support has been top class. 
