@@ -126,7 +126,7 @@
                             aria-label="mobile-drop-down">My Account</a>
                         <ul id='dropdown3' class='dropdown-content'>
                             {% if request.user.is_authenticated %}
-                            {% if request.user.is_superuser %}
+                            {% if request.user.is_staff%}
                             <a href="{% url 'add_product' %}" class="dropdown-item" aria-label="add-product">Add
                                 Product</a>
                             {% endif %}
