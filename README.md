@@ -1,6 +1,6 @@
 # The Coffee Co
 
-As a massive coffee love i wanted to create something that i am passion about not. Not something that just gives me my morning kick. I have decided to create this fully featured online coffee shop. This ecommerce application allows users to browser products, make purchases, leave product reviews and post site tesimonials. This store ranges from fresh coffee, pod coffee, coffee machines and accessories. 
+As a massive coffee love i wanted to create something that i am passion about not. Not something that just gives me my morning kick. I have decided to create this fully featured online coffee shop. This ecommerce application allows users to browser products, make purchases, leave product reviews and post site testimonials. This store ranges from fresh coffee, pod coffee, coffee machines and accessories. 
 
 ![Home-Page](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/coffeeclubhomepage.png)
 
@@ -8,7 +8,7 @@ As a massive coffee love i wanted to create something that i am passion about no
 
 ## User Experience 
 
-I wanted to create an ecommerce web based application allowing make purcases whilst registered and unregistered. Each product has a corresponding product image with name, descriotion and price. Users can add items to their cart, update and remove items. Once satisfied they can make an online purchase. Users can regiser for a user account where we can store their address information also. Staff users have access to add products, edit exisiting products and remove products at their own wish. 
+I wanted to create an ecommerce web-based application allowing make purchases whilst registered and unregistered. Each product has a corresponding product image with name, description and price. Users can add items to their cart, update and remove items. Once satisfied they can make an online purchase. Users can register for a user account where we can store their address information also. Staff users have access to add products, edit existing products and remove products at their own wish. 
 
 ## User Stories
 
@@ -69,12 +69,12 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 
 - For this area i focused on only 3 colours for simplicity. 
 - FFFFFF - convers the main content area and nav bar
-- 00000 - is used mostly for the typograpghy.
-- F7ECE1 - Is used in the testimonials section as this compliments the background image on the index page. 
+- 00000 - is used mostly for the typography.
+- F7ECE1 - Is used in the testimonials section as this compliment the background image on the index page. 
 
 ### Typography
 
-- For this area i focused one font which is "Bebas Neue", cursive; as feel this crates an assertive tone. This was used from Google Fonts. I then used 'Rubik', sans-serif; for the footer. 
+- For this area i focused one font which is "Bebas Neue", cursive; as feel this creates an assertive tone. This was used from Google Fonts. I then used 'Rubik', sans-serif; for the footer. 
 
 ### Nav Bar
 
@@ -130,8 +130,8 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 
 ### Testimonials
 
-- This area is where a user can view the sites testimontials.
-- This area is where a registered user can add a testimontial.
+- This area is where a user can view the sites testimonials.
+- This area is where a registered user can add a testimonial.
 
 ![Testimonials](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/testimonials.png)
 
@@ -149,7 +149,7 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 
 ## Testing 
 
-###  Manual Testing
+### Manual Testing
 
 - USER STORY 1: As a site user i can successfully register for a user account - MUST HAVE
 [USER STORY 1](https://share.vidyard.com/watch/5a7rXVrjrbUSQK2x6CdE5X?)
@@ -199,7 +199,7 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 - USER STORY 15: As a admin/staff user i can edit & remove products - MUST HAVE
 [USER STORY 15](https://share.vidyard.com/watch/Sa9Sstmk5jyyB9khV3AHPn?)
 
-###  Assesibility Testing
+###  Accessibility Testing
 
 ![Home-Page](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/lighthouse-homepage.png)
 
@@ -213,7 +213,7 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 
 ###  Validator Testing
 
-- Due to extream time constraints on this product i was unable to complete any validaor testing. When testing my site there is no errors being logged in the console therefore i favoured accessibility to be a much more important test for users with required needs. I have noticed this is not an mandatory part of the pass criteria however in the merit. If i had more time i would have conducted indept testing. 
+- Due to extreme time constraints on this product i was unable to complete any validator testing. When testing my site there is no errors being logged in the console therefore i favoured accessibility to be a much more important test for users with required needs. I have noticed this is not an mandatory part of the pass criteria however in the merit. If i had more time i would have conducted in-depth testing. 
 
 ## Future Features
 
@@ -233,7 +233,7 @@ The meta tags and descriptions have been updated for SEO purposes.  The main sit
 
 In order to create the list of keywords for the site, I researched both long and short tail keywords.  
 
-I simpaly used the google search engine to enhance my key words search by inputtiing common names ie coffee, fresh coffee etc. 
+I simply used the google search engine to enhance my key words search by inputting common names ie coffee, fresh coffee etc. 
 
 ### **Newsletter**
 
@@ -274,8 +274,8 @@ Please note that this page may be removed by Facebook at some point because it i
 
 11. Add the below variables to the list
 
-    * Database URL will be added automaticaly
-    * Secret_key - is the djnago secret key can be generated [here](https://miniwebtool.com/django-secret-key-generator/). 
+    * Database URL will be added automatically
+    * Secret key - is the djnago secret key can be generated [here](https://miniwebtool.com/django-secret-key-generator/). 
 
 **Go back to your code**
 
@@ -311,18 +311,18 @@ You should see the message "the app was successfully deployed"
 
 ### Forking the GitHub Repository
 
-By forking the GitHub Repository you will be able to make a copy of the original repository on your own GitHub account allowing you to view and/or make changes without affecting the original repository by using the following steps:
+By forking the GitHub Repository, you will be able to make a copy of the original repository on your own GitHub account allowing you to view and/or make changes without affecting the original repository by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/CharlesB91/The_Coffee_Co)
+1. Log in to GitHub and locate the [GitHub Repository] (https://github.com/CharlesB91/The_Coffee_Co)
 2. At the top of the Repository (not top of page) just above the "Settings" button on the menu, locate the "Fork" button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/CharlesB91/The_Coffee_Co)
+1. Log in to GitHub and locate the [GitHub Repository] (https://github.com/CharlesB91/The_Coffee_Co)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open commandline interface on your computer
+4. Open command line interface on your computer
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
@@ -332,9 +332,9 @@ $ git clone https://github.com/CharlesB91/The_Coffee_Co
 
 7. Press Enter. Your local clone will be created.
 
-### Setting up your local enviroment
+### Setting up your local environment
 
-1. Create Virtual enviroment on your computer or use gitpod built in virtual enviroment feature.
+1. Create Virtual environment on your computer or use gitpod built in virtual environment feature.
 
 2. Create env.py file. It needs to contain those 5 variables.
 
@@ -385,7 +385,7 @@ EMAIL_HOST_USER is the gmail email address
 
 1. Go to [Amzon Web Services](https://aws.amazon.com/) page and login or register
 
-2. You should be redirected to AWS Managment Console, if not click onto AWS logo in top left corner or click Services icon and choose Console Home
+2. You should be redirected to AWS Management Console, if not click onto AWS logo in top left corner or click Services icon and choose Console Home
 
 3. Below the header AWS Services click into All Services and find **S3** under Storage
 
@@ -393,7 +393,7 @@ EMAIL_HOST_USER is the gmail email address
 
 - **Configuration:** type in your chosen name for the bucket (preferably matching your heroku app name) and AWS Region closest to you
 
-- **Object ownership:** ACLs enabled, Bucket owner prefered
+- **Object ownership:** ACLs enabled, Bucket owner preferred
 
 - **Block Public Access settings:** Uncheck to allow public access, Acknowledge that the current settings will result that the objects within the bucket will become public
 
@@ -446,7 +446,7 @@ name group "manage-your-app-name" and click Create group
 
 - side menu - Policies and click **Create Policy**
 Click import managed policy - find AmazonS3FullAccess
-Copy ARN again and paste into "Resource" add list containint two elements "[ "arn::..", ""arn::../*]" First element is for bucket itself, second element is for all files and foldrs in the bucket
+Copy ARN again and paste into "Resource" add list containing two elements "[ "arn::..", ""arn::../*]" First element is for bucket itself, second element is for all files and foldrs in the bucket
 
 Click bottom right Add Tags, than Click bottom right Next: Review
 Add name of the policy and description
@@ -492,7 +492,7 @@ if 'USE_AWS' in os.environ:
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 ```
 
-12. Go to heroku to set up enviromental variables
+12. Go to heroku to set up environmental variables
 
 open CSV file downloaded earlier and copy each variable into heroku Settings
 
@@ -539,23 +539,19 @@ class MediaStorage(S3Boto3Storage):
 
 ## Bugs
 
-- The only unresolved bug that is outstanding is my order email confirmation. I had spent days tring to figure this out. Everytime i submitted a payment stripe would indicate the charge had been succeeded however payment indent was showing as 500 error. After hour of debugging i figured out that the issue was something from the send mail. I tried to many different ways to get this to work with various print statements however nothing would work. In the end i favoured the webhook to be more important that an emaill confirmation. I spoke to tutor support who indicated its like finding a needle in a haystack and due to time constraints i had to move on.
+- The only unresolved bug that is outstanding is my order email confirmation. I had spent days trying to figure this out. Every time i submitted a payment stripe would indicate the charge had been succeeded however payment indent was showing as 500 error. After hour of debugging i figured out that the issue was something from the send mail. I tried to many different ways to get this to work with various print statements however nothing would work. In the end i favoured the webhook to be more important that an email confirmation. I spoke to tutor support who indicated its like finding a needle in a haystack and due to time constraints i had to move on.
 
 ## Credits
 
-- Boutique Ado walk through provided me with some amazing logic code on how i coud get my cart, checout and profile fully functional. 
+- Boutique Ado walk through provided me with some amazing logic code on how i could get my cart, checkout and profile fully functional. 
 - [Unsplash](https://unsplash.com/) for the cool coffee background image in the home page. 
-- [www.shopcoffee.co.uk](https://www.shopcoffee.co.uk/shop/buy-coffee-beans-online/) for the product images, names & discription
-- [asos](https://www.asos.com/) for the layout requried to make my cart as simple as possible. 
+- [www.shopcoffee.co.uk](https://www.shopcoffee.co.uk/shop/buy-coffee-beans-online/) for the product images, names & description
+- [asos](https://www.asos.com/) for the layout required to make my cart as simple as possible. 
 
 ### **Conclusion**
 
-My coding journey over the last 12 months has been amazing. From starting the simiplst html css to creating full stack web application with online payments system. I remember fighting with css when i fist started out now my problems is with webhooks using stripe apis. I feel i have learned so much and due to this course i landed my first job in tech with i am so greatful for.
+My coding journey over the last 12 months has been amazing. From starting the simplest html css to creating full stack web application with online payments system. I remember fighting with css when i fist started out now my problems is with webhooks using stripe apis. I feel i have learned so much and due to this course i landed my first job in tech with i am so grateful for.
 
-As mentioned in this read my due to starting my new job, family and ran into some time constraits on this project. If had more time i would have completed more indepth validaor testing. There is no errors in the console so i am hoping this will be sufficent to get the passmark. 
+As mentioned in this read my due to starting my new job, family and ran into some time constraints on this project. If had more time i would have completed more in-depth validator testing. There is no errors in the console so i am hoping this will be sufficient.. 
 
-I have really enjoyed learning with code insititue as the support has been top class. 
-
-
-
-
+I have really enjoyed learning with code institute as the support has been top class. 
