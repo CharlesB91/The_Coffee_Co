@@ -135,5 +135,72 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 
 ![Testimonials](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/testimonials.png)
 
+## Technologies Used
+
+- HTML5
+- CSS3
+- JS 
+- JQUERY
+- Python
+- Django
+- Postgres SQL
+- Materialize CSS
+- Stripe
+
+## Testing 
+
+###  Manual Testing
+
+### Unauthorised Users
+
+- USER STORY 1: As a site user i can successfully register for a user account - MUST HAVE
+![USER STORY 1](https://share.vidyard.com/watch/5a7rXVrjrbUSQK2x6CdE5X?)
+
+
+- USER STORY 4: As registered and un registered user i can browse the product list - MUST HAVE
+
+
+- USER STORY 5: As a registered and un registered user i can search through the full product list using a search bar - MUST HAVE
+
+
+- USER STORY 6: As a registered and unregistered user i can filter through products via price & category - MUST HAVE
+
+
+- USER STORY 8: As a registered and unregistered user i can view product details- MUST HAVE
+
+
+- USER STORY 9: As a registered and unregistered user i can view each product review - COULD HAVE
+
+
+- USER STORY 10: As a registered and unregistered i can add multiple items to my cart. I can then view my cart with the grand total price and delivery cost if applicable - MUST HAVE
+
+
+- USER STORY 13: As a registered and unregistered user i can update and remove products from my card - MUST HAVE
+
+
+- USER STORY 17: As a registered and unregistered user i can make purchases via stripe - MUST HAVE
+
+
+- USER STORY 7: As a registered and unregistered user i can sort products via price, name & category - COUD HAVE
+
+
+- USER STORY 2: As a registered User i can log in successfully using my registered email and password - MUST HAVE
+
+
+- USER STORY 3: As a registered User i can update my delivery details via the profile area - COULD HAVE
+
+
+- USER STORY 14: As registered user i can leave product reviews - COULD HAVE
+
+
+- USER STORY 15: As a registered user i can leave site testimonials - COULD HAVE
+
+
+- USER STORY 11: As a admin/staff user i can add products to the site - MUST HAVE
+
+
+- USER STORY 15: As a admin/staff user i can edit & remove products - MUST HAVE
+
+
 
 
