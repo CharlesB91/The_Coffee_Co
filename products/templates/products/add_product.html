@@ -9,7 +9,7 @@
   <form id="add-form" method="POST" enctype="multipart/form-data">
     <h1>Add Product</h1>
     {% csrf_token %} {{ form.media }} {{form.as_p}}
-    <input type="submit" class="btn signbtn" name="submit" />
+    <input type="submit" class="btn signbtn" name="submit" aria-label="add-product" />
   </form>
 </div>
 

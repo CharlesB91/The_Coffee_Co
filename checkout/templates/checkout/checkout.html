@@ -32,8 +32,10 @@
                     <input type="checkbox" id="id-save-info" name="save-info" checked>
                     {% else %}
                     <label for="id-save-info">
-                        <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or
-                        <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                        <a class="text-info" href="{% url 'account_signup' %}" aria-label="sign-up">Create an
+                            account</a> or
+                        <a class="text-info" href="{% url 'account_login' %}" aria-label="login">login</a> to save this
+                        information
                     </label>
                     {% endif %}
                 </div>
@@ -48,12 +50,12 @@
                 <input type="hidden" value="{{ client_secret }}" name="client_secret">
             </fieldset>
             <div class="buttons-main1">
-                <a class="btn fontbtn" href="{% url 'view_cart' %}">
+                <a class="btn fontbtn" href="{% url 'view_cart' %}" aria-label="view-cart">
                     <span>
                     </span>
                     <span>Adjust Bag</span>
                 </a>
-                <button class="btn fontbtn" id="submit-button">
+                <button class="btn fontbtn" id="submit-button" aria-label="complete-order">
                     <span>Complete Order</span>
                     <span>
                     </span>
