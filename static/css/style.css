@@ -363,6 +363,10 @@ footer.page-footer {
     width: 300px !important;
 }
 
+#mc_embed_signup form {
+    width: 300px !important;
+}
+
 footer {
     font-family: 'Rubik', sans-serif;
     text-align: left !important;
