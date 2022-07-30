@@ -151,8 +151,6 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 
 ###  Manual Testing
 
-### Unauthorised Users
-
 - USER STORY 1: As a site user i can successfully register for a user account - MUST HAVE
 [USER STORY 1](https://share.vidyard.com/watch/5a7rXVrjrbUSQK2x6CdE5X?)
 
@@ -200,6 +198,22 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 
 - USER STORY 15: As a admin/staff user i can edit & remove products - MUST HAVE
 [USER STORY 15](https://share.vidyard.com/watch/Sa9Sstmk5jyyB9khV3AHPn?)
+
+###  Assesibility Testing
+
+![Home-Page](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/cart.png)
+
+![Product-List](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/cart.png)
+
+![Product-Detail](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/cart.png)
+
+![Cart](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/cart.png)
+
+![Checkout](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/cart.png)
+
+###  Validator Testing
+
+- Due to extream time constraints on this product i was unable to complete any validaor testing. When testing my site there is no errors being logged in the console therefore i favoured accessibility to be a much more important test for users with required needs. I have noticed this is not an mandatory part of the pass criteria however in the merit. If i had more time i would have conducted indept testing. 
 
 
 
