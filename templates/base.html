@@ -20,7 +20,6 @@
     {% endblock %}
 
 
-
     {% block corecss %}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -153,6 +152,7 @@
                             Machines</a></li>
                     <li><a href="{% url 'products' %}?category=accessories" aria-label="accessories">Accessories</a>
                     </li>
+
                     <li><a href="{% url 'view_cart' %}" aria-label="view-cart"> {% if grand_total %}
                             £{{ grand_total|floatformat:2 }}
                             {% else %}
@@ -224,7 +224,7 @@
                     <!-- Begin Mailchimp Signup Form -->
                     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet"
                         type="text/css">
-                    <div id="mc_embed_signup">
+                    <div class="news-letter" id="mc_embed_signup">
                         <form
                             action="https://hotmail.us11.list-manage.com/subscribe/post?u=67a94cdb1aee5d0925a074b2e&amp;id=1535068060"
                             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"

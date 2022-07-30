@@ -53,10 +53,12 @@
         <span class="text-uppercase">Keep Shopping</span>
         <input type="hidden" name="redirect_url" value="{{ request.path }}">
       </a>
+    </form>
+    <div class="review-button">
       {% if request.user.is_authenticated %}
       <a class="modal-trigger green-text" href="#modalcommentbox" aria-label="review-button">Love This Product ?</a>
       {% endif %}
-    </form>
+    </div>
     <!-- Modal Structure -->
     <div id="modal2" class="modal reviewmodal">
       <div class="modal-content">

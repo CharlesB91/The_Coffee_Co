@@ -346,15 +346,21 @@ footer.page-footer {
     padding-top: 50px;
 }
 
+
+
+#mc_embed_signup .mc-field-group input {
+    color: white !important;
+}
+
+.review-button {
+    padding-top: 5px;
+}
+
 #mc_embed_signup {
     clear: left;
     color: white;
     font: 14px;
-    width: 400px;
-}
-
-#mc_embed_signup .mc-field-group input {
-    color: white !important;
+    width: 300px !important;
 }
 
 footer {
@@ -362,3 +368,48 @@ footer {
     text-align: left !important;
     height: 600px;
 }
+
+/* Responsive Styles */
+
+@media only screen and (max-width : 600px) {
+    #mc_embed_signup form {
+        width: 300px !important;
+    }
+
+    .form-area1 {
+        width: 300px !important;
+
+}
+
+}
+
+@media only screen and (max-width : 380px) {
+    #mc_embed_signup.news.letter form {
+        width: 200px !important;
+    }
+
+}
+@media only screen and (max-width : 280px) {
+    #mc_embed_signup form {
+        width: 200px !important;
+    }
+
+    nav .brand-logo {
+        font-size: 120% !important;
+    }
+
+    #testimonal-area h1 {
+        padding-top: 40px !important;
+    }
+
+}
+
+@media only screen and (max-width : 1024px) {
+
+    nav ul a,
+    nav .brand-logo,
+    .material-icons {
+        font-size: 90% !important;
+    }
+}
+
