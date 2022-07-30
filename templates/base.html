@@ -35,10 +35,17 @@
     <script src="{% static 'js/materialize.js' %}"></script>
     <script src="{% static 'js/init.js' %}"></script>
     <script src="https://js.stripe.com/v3/"></script>
+
     {% endblock %}
 
     {% block extra_js %}
     {% endblock %}
+
+    <style>
+        .footericons i {
+            font-size: 10px;
+        }
+    </style>
 
 </head>
 
@@ -219,6 +226,29 @@
                     <h6>Hamilton</h6>
                     <h6>ML3 7PY</h6>
                     <h5>01698256788</h5>
+                    <div class="footericons">
+                        <a href="https://www.facebook.com/The-Coffee-Co-102924052521424"
+                            aria-label="Go to our Facebook page (opens in new tab)" rel="noopener" target="_blank">
+                            Facebook
+                        </a>
+                        <br>
+                        <a href="https://www.instagram.com/"
+                            aria-label="Go to Intagram (opens in new tab)" rel="noopener" target="_blank">
+                            Instagram
+                        </a>
+                        <br>
+                        <a href="https://twitter.com/" aria-label="Go to Twitter (opens in new tab)" rel="noopener" target="_blank">
+                            Twitter
+                        </a>
+                        <br>
+                        <a href="https://www.linkedin.com/" aria-label="Go to LinkedIn (opens in new tab)" rel="noopener" target="_blank">
+                            LinkedIn
+                        </a>
+                        <br>
+                        <a href="https://www.fairtrade.org.uk/buying-fairtrade/coffee/" aria-label="link to fairtrade cofffee (opens in new tab)" rel="sponsored" target="_blank">
+                            Fairtrade Coffee
+                        </a>
+                    </div>
                 </div>
                 <div class="col l6 s12">
                     <!-- Begin Mailchimp Signup Form -->
