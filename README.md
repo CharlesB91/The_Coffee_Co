@@ -201,15 +201,15 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 
 ###  Assesibility Testing
 
-![Home-Page](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/cart.png)
+![Home-Page](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/lighthouse-homepage.png)
 
-![Product-List](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/cart.png)
+![Product-List](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/product-list.png)
 
-![Product-Detail](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/cart.png)
+![Product-Detail](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/product-detail.png)
 
-![Cart](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/cart.png)
+![Cart](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/cart-lh.png)
 
-![Checkout](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/cart.png)
+![Checkout](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/checkout-lh.png)
 
 ###  Validator Testing
 
