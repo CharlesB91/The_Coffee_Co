@@ -537,6 +537,25 @@ class MediaStorage(S3Boto3Storage):
 - Go to your S3 bucket page on AWS. Create new folder "media"
 - go to the media folder and click Upload
 
+## Bugs
+
+- The only unresolved bug that is outstanding is my order email confirmation. I had spent days tring to figure this out. Everytime i submitted a payment stripe would indicate the charge had been succeeded however payment indent was showing as 500 error. After hour of debugging i figured out that the issue was something from the send mail. I tried to many different ways to get this to work with various print statements however nothing would work. In the end i favoured the webhook to be more important that an emaill confirmation. I spoke to tutor support who indicated its like finding a needle in a haystack and due to time constraints i had to move on.
+
+## Credits
+
+- Boutique Ado walk through provided me with some amazing logic code on how i coud get my cart, checout and profile fully functional. 
+- [Unsplash](https://unsplash.com/) for the cool coffee background image in the home page. 
+- [www.shopcoffee.co.uk](https://www.shopcoffee.co.uk/shop/buy-coffee-beans-online/) for the product images, names & discription
+- [asos](https://www.asos.com/) for the layout requried to make my cart as simple as possible. 
+
+### **Conclusion**
+
+My coding journey over the last 12 months has been amazing. From starting the simiplst html css to creating full stack web application with online payments system. I remember fighting with css when i fist started out now my problems is with webhooks using stripe apis. I feel i have learned so much and due to this course i landed my first job in tech with i am so greatful for.
+
+As mentioned in this read my due to starting my new job, family and ran into some time constraits on this project. If had more time i would have completed more indepth validaor testing. There is no errors in the console so i am hoping this will be sufficent to get the passmark. 
+
+I have really enjoyed learning with code insititue as the support has been top class. 
+
 
 
 
