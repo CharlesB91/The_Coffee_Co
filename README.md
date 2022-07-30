@@ -156,51 +156,50 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 - USER STORY 1: As a site user i can successfully register for a user account - MUST HAVE
 [USER STORY 1](https://share.vidyard.com/watch/5a7rXVrjrbUSQK2x6CdE5X?)
 
-
 - USER STORY 4: As registered and un registered user i can browse the product list - MUST HAVE
-
+[USER STORY 4](https://share.vidyard.com/watch/AJQbcX1xyXCQub35X9kPD9?)
 
 - USER STORY 5: As a registered and un registered user i can search through the full product list using a search bar - MUST HAVE
-
+[USER STORY 5](https://share.vidyard.com/watch/9i7LkkZJhzUGXESihqZSMJ?)
 
 - USER STORY 6: As a registered and unregistered user i can filter through products via price & category - MUST HAVE
-
+[USER STORY 6](https://share.vidyard.com/watch/NUwvnzmkmKdt5KosVdSguq?)
 
 - USER STORY 8: As a registered and unregistered user i can view product details- MUST HAVE
-
+[USER STORY 8](https://share.vidyard.com/watch/XxnmDBV8oLYhN57zXFVywT?)
 
 - USER STORY 9: As a registered and unregistered user i can view each product review - COULD HAVE
-
+[USER STORY 9](https://share.vidyard.com/watch/ZbsjPD4mXgGjThvaZAAYvE?)
 
 - USER STORY 10: As a registered and unregistered i can add multiple items to my cart. I can then view my cart with the grand total price and delivery cost if applicable - MUST HAVE
-
+[USER STORY 10](https://share.vidyard.com/watch/HTMjfZLZ5dYAcwbxBhK1Wn?)
 
 - USER STORY 13: As a registered and unregistered user i can update and remove products from my card - MUST HAVE
-
+[USER STORY 13](https://share.vidyard.com/watch/g4r8JyU4g7zmwDxgA4vQeV?)
 
 - USER STORY 17: As a registered and unregistered user i can make purchases via stripe - MUST HAVE
-
+[USER STORY 17](https://share.vidyard.com/watch/w9iP3GZ9Pkpj3chQHfn39K?)
 
 - USER STORY 7: As a registered and unregistered user i can sort products via price, name & category - COUD HAVE
-
+[USER STORY 7](https://share.vidyard.com/watch/eLDHQoQyTRTZfuAC355RPo?)
 
 - USER STORY 2: As a registered User i can log in successfully using my registered email and password - MUST HAVE
-
+[USER STORY 2](https://share.vidyard.com/watch/WUQYCh13hHV5RnUFQ19PNQ?)
 
 - USER STORY 3: As a registered User i can update my delivery details via the profile area - COULD HAVE
-
+[USER STORY 3](https://share.vidyard.com/watch/nqsRNSSRQ8XQnMD4AbsNUJ?)
 
 - USER STORY 14: As registered user i can leave product reviews - COULD HAVE
-
+[USER STORY 14](https://share.vidyard.com/watch/WyY6V7YVeG4zAQoUD3pWzD?)
 
 - USER STORY 15: As a registered user i can leave site testimonials - COULD HAVE
-
+[USER STORY ](https://share.vidyard.com/watch/8Krtg4SFt2hX1DkAPNbdEc?)
 
 - USER STORY 11: As a admin/staff user i can add products to the site - MUST HAVE
-
+[USER STORY ](https://share.vidyard.com/watch/EYTe6BFAVgZzuataTTCWxp?)
 
 - USER STORY 15: As a admin/staff user i can edit & remove products - MUST HAVE
-
+[USER STORY 15](https://share.vidyard.com/watch/Sa9Sstmk5jyyB9khV3AHPn?)
 
 
 
