@@ -45,6 +45,13 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 - USER STORY: As a admin/staff user i can add products to the site - MUST HAVE
 - USER STORY: As a admin/staff user i can edit & remove products - MUST HAVE
 
+## Database Model
+
+- Here is a diagram of my database model used in this project.
+
+![Data-Model](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/thecoffeeco.drawio.png)
+
+
 ## Design
 
 ### Wireframe
@@ -60,8 +67,16 @@ Each story was assigned a classification of Must-Have, Should-Have, Could-Have o
 ![Colour-Pallet1](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/colours1.png)
 ![Colour-Pallet1](https://github.com/CharlesB91/The_Coffee_Co/blob/main/readme/colour2.png)
 
-- For this area i focused on only 2 particular colours.
-- #8ca1a5 for the nav bar.
-- #fffff for the background colour - feel this creates a great contract between this and the typography as i was looking for this to stand out.
-- I used the built in colours from materialize.css for the buttons within the site.
+- For this area i focused on only 3 colours for simplicity. 
+- FFFFFF - convers the main content area and nav bar
+- 00000 - is used mostly for the typograpghy.
+- F7ECE1 - Is used in the testimonials section as this compliments the background image on the index page. 
+
+### Typography
+
+- For this area i focused one font which is "Bebas Neue", cursive; as feel this crates an assertive tone. This was used from Google Fonts. I then used 'Rubik', sans-serif; for the footer. 
+
+
+
+
 
