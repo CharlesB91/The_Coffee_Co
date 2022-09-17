@@ -235,6 +235,10 @@ footer.page-footer {
     font-family: 'Bebas Neue', cursive !important;
 }
 
+.btn-home {
+    font-size: 120%;
+}
+
 /* Checkout */
 
 .buttons-main1 {
