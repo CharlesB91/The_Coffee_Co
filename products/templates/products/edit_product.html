@@ -2,6 +2,7 @@
 
 <!-- Edit Product -->
 
+{% if user.is_staff %}
 <div class="form-area1">
   <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
     {% csrf_token %}
@@ -12,4 +13,5 @@
     </div>
   </form>
 </div>
+{% endif %}
 {% endblock content %}
