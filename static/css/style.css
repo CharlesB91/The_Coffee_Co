@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
@@ -417,7 +418,6 @@ footer {
     nav ul a,
     nav .brand-logo,
     .material-icons {
-        font-size: 90% !important;
+        font-size: 120% !important;
     }
 }
-
