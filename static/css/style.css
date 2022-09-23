@@ -168,6 +168,17 @@ footer.page-footer {
     color: #444;
 }
 
+.row2 {
+    padding-left: 10px;
+    display: flex;
+}
+
+.row3 {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 /* Product Detail */
 

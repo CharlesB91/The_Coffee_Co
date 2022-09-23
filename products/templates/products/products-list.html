@@ -3,18 +3,45 @@
 
 {% block content %}
 
+<style> 
+
+.row2 {
+    padding-left: 10px;
+    display: flex;
+}
+
+.row3 {
+    display: flex;
+    justify-content: center;
+}
+
+.select-wrapper input.select-dropdown {
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  outline: none;
+  height: 3rem;
+  line-height: 3rem;
+  width: 200px;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  padding: 0;
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 1;
+}
+
+</style>
+
+
 <!-- Filer Options -->
 
-<div class="row">
-    <div id="product-info" class="col s6">
-        <p>
-            {% if search_term or current_categories or current_sorting != 'None_None' %}
-            <span><a href="{% url 'products' %}" aria-label="view-products">Products Home</a>|</span>
-            {% endif %}
-            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
-        </p>
-    </div>
-    <div class="col s6">
+    <div class="col s6 row2">
         <div class="input-field col s12">
             <select id="sort-selector">
                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
@@ -34,6 +61,15 @@
             </select>
         </div>
     </div>
+
+
+<div id="product-info" class="col s6 row3">
+    <p>
+        {% if search_term or current_categories or current_sorting != 'None_None' %}
+        <span><a href="{% url 'products' %}" aria-label="view-products">Products Home</a>|</span>
+        {% endif %}
+        {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+    </p>
 </div>
 
 <!-- Product Detail List -->
