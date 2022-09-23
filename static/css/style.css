@@ -214,6 +214,10 @@ footer.page-footer {
     font-size: 120%;
 }
 
+.product-detail-space, .form-control {
+    width: 200px !important;
+  }
+
 
 /* Shopping Cart */
 
