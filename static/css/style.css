@@ -255,6 +255,11 @@ footer.page-footer {
     font-size: 120%;
 }
 
+.card-image {
+    display: flex;
+    justify-content: center;
+}
+
 /* Checkout */
 
 .buttons-main1 {

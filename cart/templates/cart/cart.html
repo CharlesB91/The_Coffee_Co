@@ -10,7 +10,7 @@
 <h2 class="cart-head">Shopping Cart</h2>
 {% if cart_items %}
 {% for item in cart_items %}
-<div id="cart-area" class="row">
+<div id="cart-area" class="row cardrow">
     <div id="cart-card">
         <div class="card">
             <div id="cart-image" class="card-image">
@@ -45,11 +45,6 @@
     <div class="btn-space">
         <a href="{% url 'checkout' %}">
             <button class="btn  green lighten-1">CheckOut</button>
-        </a>
-    </div>
-    <div class="btn-space">
-        <a href="{% url 'products' %}">
-            <button class="btn">Keep Shopping</button>
         </a>
     </div>
 </div>
